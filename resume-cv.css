@@ -1,0 +1,344 @@
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #AED7E8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container{
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: white;
+        margin: 50px;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+    }
+    
+    /*------------------------------------------
+            Left Side start
+    -------------------------------------------*/
+    .left-side{
+        background-color: #013048;
+        padding: 40px;
+        position: relative;
+    }
+    
+    /*----------------------------
+     Profile Img and text start
+    ----------------------------*/
+    .profile-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(255, 255, 255,0.3);
+    }
+    
+    .boximg{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .boximg img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .profile-text h2{
+        color: white;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.4em;
+    }
+    
+    .profile-text h2 span{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    /*-------------------------
+        Contact Info Start
+    ---------------------------*/
+    
+    .contact-info{
+        padding-top: 40px;
+    }
+    
+     .title{
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        
+    }
+    
+    .contact-info ul{
+        position: relative;
+    }
+    
+    .contact-info ul li{
+        position: relative;
+        list-style: none;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    
+    .contact-info ul li .icon{
+        color: #03a9f4;
+        width: 30px;
+       font-size: 18px;
+       display: inline-block;
+    }
+    
+    .contact-info ul li .info-text{
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    
+    /*------------------------
+    Education Info Start
+    -------------------------*/
+    .education-info{
+        margin-top: 40px;
+    }
+    
+    
+    .education-info ul{
+        list-style: none;
+    }
+    
+    .education-info h5{
+        color: #03a9f4;
+        padding-top:10px;
+        line-height: 2;
+        font-weight: 300;
+    }
+    
+    .education-info h4{
+        color: white;
+        font-weight: 500;
+    }
+    
+    .language-info{
+        padding-top: 40px;
+    }
+    
+    .language-info ul li {
+        list-style: none;
+        padding-top: 13px;
+    }
+    
+    .language-info ul li .text{
+        color: white;
+        font-weight: 300;
+        line-height: 1;
+    }
+    
+    .language-info ul li .lng{
+        width: 100%;
+        height: 6px;
+        display: block;
+        margin-top: 5px;
+        position: relative;
+        background-color: black;
+    }
+    
+    .language-info ul li .lng div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #03a9f4;
+    }
+    
+    
+    /*------------------------------------------
+            Left Side end
+    -------------------------------------------*/
+    
+    
+    
+    
+    /*------------------------------------------
+            Right Side start
+    -------------------------------------------*/
+    .right-side{
+        background-color: rgb(255, 255, 255);
+        padding: 40px;
+        position: relative;
+    }
+    
+    
+    /*-----------------------
+        About Us Start 
+    ------------------------*/
+    
+    .about{
+        margin-bottom: 50px;
+    }
+    
+    .about:last-child{
+        margin-bottom: 0;
+    }
+    
+    .title2{
+        color: #013048;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    
+    .about p{
+        color: #013048;
+    }
+    
+    /*------------------------
+        Experience start
+    -------------------------*/
+    .about .box{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px;
+    }
+    
+    .about .year-company{
+        min-width: 150px;
+    }
+    
+    .about .year-company h5{
+        color: #848c90;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .about .box .text h4{
+        color: #03a9f4;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+    
+    
+    
+    
+    
+    .about-skils .box{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-skils .box h4{
+        color: #848c90;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 3;
+    }
+    
+    progress{
+        width: 100%;
+        padding:10px ;
+    }
+    
+    
+    /*---------------------------
+        interested
+    ----------------------------*/
+    
+    
+    .interested {
+        margin-top: 45px;
+    }
+    
+    .interested ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+    }
+    
+    .interested  li{
+        color: #333;
+        font-weight: 500;
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+    
+    .interested ul li i{
+        color: #03a9f4;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    /*------------------------------------------
+            Right Side end
+    -------------------------------------------*/
+    
+    
+ @media screen and (max-width: 970px){
+        .container{
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10px;
+        }
+        .interested ul{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+
+    @media screen and (max-width: 600px){
+        .about .box{
+            flex-direction: column;
+        }
+        .about .year-company {
+            margin: 5px;
+        }
+        .about-skils .box { 
+            grid-template-columns: repeat(1,1fr);
+        
+        }
+
+        .about-skils .box h4 {
+           line-height: 1;
+        }
+
+    
+        progress {
+            margin-bottom: 10px;
+        }
+
+        .interested ul{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+
+
+}
+
+
